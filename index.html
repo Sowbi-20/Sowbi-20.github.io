@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #f9f9f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 12rem;
+            background: #00b09b;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.014),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.02),
+ 12.5px 12.5px 10px rgba(0, 0, 0, 0.025),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.03),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.036),
+  100px 100px 80px rgba(0, 0, 0, 0.05)
+;   
+        }
+
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-data {
+            color:rgb(60, 57, 55);
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            
+        }
+
+
+        .profile-img {
+            height: 11rem;
+            width: 11rem;
+            border-radius: 100%;
+            background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+border-radius: 100px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 12rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid rgb(77, 215, 169); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 20rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section-title {
+            /* height: 10%; */
+            color: aquamarine;
+            font-weight: bold;
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+
+        .companies {
+            font-weight: bold;
+
+
+            color: aquamarine;
+        }
+        .color-primary{
+            color:rgb(17, 145, 94);
+        }
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+        .list{
+            color:aliceblue;
+            text-align: left;
+
+        }
+        .section5{
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+        /* .section6 {
+            width: 70%;
+            height: 14rem;
+            background: #00b09b;  /* fallback for old browsers */
+            /* background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+            
+        .section6 {
+            width: 70%;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+
+            background: #00b09b;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #96c93d, #00b09b); 
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        /* li {
+            list-style: square;
+            margin-left: 2rem;
+        }
+
+        .text-white {
+            color: white;
+        }
+         */
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <div class="section1">
+        <div class="profile-img-section">
+
+            <img src="img.jpeg" alt="profile" class="profile-img">
+
+        </div>
+        <div class="profile-data">
+            <h1>SOWBARNIKA P N</h1>
+            <h4>pnsowbarnika@gmail.com</h4>
+        </div>
+    </div>
+    <div class="section2">
+        <h1 class="section-title color-primary">
+            Objectives
+        </h1>
+        <p>
+            I am a dedicated Computer Science student with a strong passion for software development, problem-solving, and innovative technology solutions. Currently pursuing a Bachelor’s degree in Computer Science, I have gained hands-on experience in programming languages such as Python, Java, and C++, along with knowledge in data structures, algorithms, and database management. I am keen on applying my skills in real-world applications, contributing to software projects, and continuously expanding my technical expertise in areas like machine learning, artificial intelligence, and cybersecurity.
+            Eager to kick-start my career in software development field with a reputable company that offers opportunities for skill development and career advancement.
+        </p>
+    </div>
+    <div class="section3">
+        <h1 class="section-title color-primary">
+            Education
+        </h1>
+            <table class="ed-table">
+                <tr>
+                    <th>SCHOOL</th>
+                    <th>YEAR</th>
+                    <th>SCHOOL</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>2020</td>
+                    <td>AVP Trust National Matric Higher Secondary School</td>
+                    <td>82%</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>2022</td>
+                    <td>AVP Trust National Matric Higher Secondary School</td>
+                    <td>83%</td>
+                </tr>
+                <tr>
+                    <td>UG</td>
+                    <td>2026</td>
+                    <td>B.E Computer Science Engineering(CYBER SECURITY) , 
+                           Sri Shakthi Institute Of Engineering and Technology</td>
+                    <td>7.90%</td>
+                </tr>
+                <!-- <tr>
+                    <td>deg 3</td>
+                    <td>school 2</td>
+                    <td>85%</td>
+                </tr> -->
+            </table>
+        </div>
+    <div class="section4">
+        <h1 class="section-title color-primary">
+            Internships
+        </h1>
+        <div class="compaines">
+            <p>
+                <b>Software Development Intern, Tech Innovators Inc.</b> – Worked on full-stack web development projects using JavaScript, React, and Node.js, improving the user interface for a key product feature by 20%.
+            </p>
+            <p><strong>Science Intern, AI Solutions Ltd.</strong> Science Intern, AI Solutions Ltd. – Analyzed large datasets and built machine learning models using Python and TensorFlow, optimizing prediction accuracy for customer behavior analysis by 15%.</p>
+            
+        </div>
+       </div>
+    <div class="section5"></div>
+    <div class="section5">
+        <h1 class="section-title color-primary">
+            Skills
+        </h1>
+        <ul>
+            <li>MERN</li>
+            <li>JAVA</li>
+            <li>DATA STRUCTURES</li>
+            <li>DevOps</li>
+        </ul>
+
+    </div>
+    <div class="section6">
+        <div class="section7">
+            <a href="tel:+91 7538828722">
+                <i class="fa-solid fa-phone" style="color: #212c2b;"></i>
+            </a>
+            <a href="mailto:pnsowbarnika@gmail.com">
+                <i class="fa-solid fa-envelope" style="color: #212c2b;"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin" style="color: #212c2b;"></i>
+            </a>
+        </div>
+    </div>
+    
+
+
+
+
+    <script>
+        //string
+        //number
+        //boolean
+        //null
+        //undefined
+        // x="hi";
+        // alert(x)
+        let number=10;
+        let string="hi";
+        let boolean=false;
+        let nullvalue=null;
+        let undefinedvalue= undefined;
+        console.log(number+" "+string+" "+boolean);
+        console.log(string);
+        console.log(number);
+        console.log(boolean);
+        console.log(nullvalue);
+        console.log(undefined);
+        // object
+        let data={
+            name:"sowbi",
+            phone:738828722,
+            alive:true
+        }
+        console.log(data.alive);
+        // json
+        let datajs={
+            name:"sowbi",
+            phone:738828722,
+            alive:true
+        }
+        console.log(data.alive);
+        let datajson={
+            "name":"sowbi",
+            "phone":738828722,
+            "alive":true
+        }
+        console.log(datajs);
+        console.log(datajson);
+        // array
+        let dataarray=[datajs,datajson,"hi",false]
+        console.log(dataarray[2]);
+        // camelcasing
+        let Hi="hi";
+        let hi="hi"
+        let FirstName="hihello";
+        let firstName="hihello";
+        // function
+
+        function myfunction(){
+            console.log("Function:" +hi)
+            console.log("Function:" +data)
+
+        }
+        myfunction(3)
+        // multiple param
+        function myfunction(data,data1){
+            console.log("Function:" +data,data1)
+            console.log("Function:" +data*data1)
+
+        }
+        myfunction(3,2)
+        // conditional
+        function myfunction(data,data1){
+            if(data1){
+
+                console.log(data+data1)
+            }
+            else{
+                console.log("not defined")
+            }
+
+        }
+        myfunction(3,2)
+        myfunction(1,false)
+
+    </script>
+    
+</body>
+</html>
